@@ -8,21 +8,36 @@ Example Citrix Netscaler Load Balancer Configuration
 The variables
 
 Vlan ID : 100
+
 Vlan Description : Vlan_test
+
 Virtual Server Self IP : 192.168.1.11
+
 Virtual Server IP : 192.168.1.12
+
 Node (Server IP Adresses) :  192.168.1.13 and 192.168.1.14
+
 LB Service Port : 443
+
 Node (Server) Service Port : 80
+
 Monitor Type : tcp
+
 Persistence : CookieInsert
+
 Virtual Server Name : test_virtual_server_name
+
 Pool (Service Group) Name :  test_pool_name
+
 SSL Certificate Name : wildcard.sslcertificate.com (manually pre-defined)
+
+
 
 You need to edit your variables depends on your configuration :)
 
 These are the Citrix CLI commands that you can execute directly via SSH, you can also use my Python scripts to automate all. (Check my repo)
+
+
 
 add vlan 100 -aliasName "Vlan_test"
 
