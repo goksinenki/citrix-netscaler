@@ -18,7 +18,7 @@ Monitor Type : tcp
 Persistence : CookieInsert
 Virtual Server Name : test_virtual_server_name
 Pool (Service Group) Name :  test_pool_name
-SSL Certificate Name : wildcard.sslsertificate.com (manually pre-defined)
+SSL Certificate Name : wildcard.sslcertificate.com (manually pre-defined)
 
 You need to edit your variables depends on your configuration :)
 
@@ -36,7 +36,7 @@ add ns ip 192.168.1.11 255.255.255.0 -type VIP -td 100 -icmp ENABLED -vServer EN
 
 add lb vserver test_virtual_server_name SSL 192.168.1.12 443 -td 100 -lbMethod ROUNDROBIN
 
-bind ssl vserver test_virtual_server_name -certkeyName wildcard.sslsertificate.com
+bind ssl vserver test_virtual_server_name -certkeyName wildcard.sslcertificate.com
 
 add servicegroup test_pool_name HTTP -td 100
 
