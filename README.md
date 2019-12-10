@@ -31,13 +31,16 @@ Pool (Service Group) Name :  test_pool_name
 
 SSL Certificate Name : wildcard.sslcertificate.com (manually pre-defined)
 
-
+################
 
 You need to edit your variables depends on your configuration :)
 
+################
+
+
 These are the Citrix CLI commands that you can execute directly via SSH, you can also use my Python scripts to automate all. (Check my repo)
 
-
+#################
 
 add vlan 100 -aliasName "Vlan_test"
 
